@@ -45,12 +45,6 @@ body {
         background-position: 0% 50%;
     }
 }
-@keyframes moveHeader {
-    0% { transform: translateX(0); }
-    50% { transform: translateX(20px); } /* Slight movement to the right */
-    100% { transform: translateX(0); } /* Back to the start */
-}
-
 
 
 @keyframes glowEffect {
