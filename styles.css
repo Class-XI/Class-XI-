@@ -1,23 +1,19 @@
-/* Body and background styles */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    min-height: 200vh; /* Ensure enough scrollable content */
-    transition: background-color 0.5s ease; /* Smooth background transitions */
+    min-height: 100%; /* Ensure enough scrollable content */
     display: flex;
     justify-content: center;
     align-items: flex-start;
     color: white;
     background: linear-gradient(135deg, #000000, #4b0082);
-
     overflow-y: auto;
     position: relative;
     height: 100%;
     flex-direction: column;
 }
 
-/* Header styling */
 .header {
     width: 100%;
     text-align: center;
@@ -28,24 +24,8 @@ body {
     z-index: 100; /* Ensure it stays above other content */
     padding: 20px 0;
     background: transparent;
-    animation: moveHeader 10s linear infinite; /* Header animation */
     text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff; /* Glow effect */
 }
-
-
-/* Background movement animation */
-@keyframes moveBackground {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
 
 @keyframes glowEffect {
     0% {
@@ -56,7 +36,6 @@ body {
     }
 }
 
-/* Responsive Layout for Mobile */
 .container {
     display: flex;
     flex-wrap: wrap;  /* Wraps boxes to the next row after 3 */
@@ -76,8 +55,6 @@ body {
                  0 0 40px rgba(255, 255, 255, 0.2);
 }
 
-
-/* Glowing effect for the friend-box hover state */
 .friend-box {
     background: linear-gradient(145deg, #1a1a1a, #333);
     padding: 20px;
@@ -136,9 +113,6 @@ body {
     border-radius: 10px;
     font-family: 'Poppins', sans-serif;
     color: #ddd;
-    text-shadow: 0 0 10px rgba(173, 216, 230, 0.8), 
-                 0 0 20px rgba(173, 216, 230, 0.6),
-                 0 0 30px rgba(173, 216, 230, 0.4);
 }
 .insta-link {
     color: #48e4ef; /* Instagram brand color */
@@ -156,12 +130,8 @@ body {
 .details p {
     margin: 5px 0;
     font-size: 1rem;
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 
-                 0 0 15px rgba(255, 255, 255, 0.6),
-                 0 0 25px rgba(255, 255, 255, 0.4);
 }
 
-/* RESPONSIVE STYLING FOR MOBILE */
 @media (max-width: 768px) {
     @media (max-width: 768px) {
         .header {
@@ -176,7 +146,7 @@ body {
         }
 
         .friend-box {
-            width: 100%; /* Full width for each friend box on mobile */
+            width: 80%; /* Full width for each friend box on mobile */
             margin-bottom: 20px;
         }
 
@@ -187,10 +157,8 @@ body {
     .details p {
         font-size: 0.9rem; /* Smaller details text */
     }
-
 }
 
-/* Keyword styling */
 .keyword {
     color: #FFD700; /* Golden color to highlight */
     cursor: pointer; /* Pointer cursor to indicate it's clickable */
