@@ -51,39 +51,7 @@ body {
     100% { transform: translateX(0); } /* Back to the start */
 }
 
-/* Moving particles in the background */
-.particles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    pointer-events: none;
-}
 
-.particle {
-    position: absolute;
-    background-color: rgba(255, 244, 93, 0.986);
-    border-radius: 50%;
-    animation: moveParticle 15s linear infinite;
-    opacity: 0.8;
-}
-
-/* Keyframes for particle movement */
-@keyframes moveParticle {
-    0% {
-        transform: translateY(100vh) translateX(0);
-        opacity: 0.4;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(-100vh) translateX(50px);
-        opacity: 0.4;
-    }
-}
 
 @keyframes glowEffect {
     0% {
@@ -93,15 +61,6 @@ body {
         text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
     }
 }
-
-
-/* Particle sizes and placement */
-.particle:nth-child(1) { width: 10px; height: 10px; left: 10%; animation-duration: 8s; animation-delay: 0s; }
-.particle:nth-child(2) { width: 15px; height: 15px; left: 25%; animation-duration: 12s; animation-delay: 2s; }
-.particle:nth-child(3) { width: 8px; height: 8px; left: 40%; animation-duration: 10s; animation-delay: 4s; }
-.particle:nth-child(4) { width: 20px; height: 20px; left: 60%; animation-duration: 18s; animation-delay: 3s; }
-.particle:nth-child(5) { width: 12px; height: 12px; left: 75%; animation-duration: 15s; animation-delay: 1s; }
-.particle:nth-child(6) { width: 18px; height: 18px; left: 90%; animation-duration: 22s; animation-delay: 6s; }
 
 /* Responsive Layout for Mobile */
 .container {
@@ -235,13 +194,6 @@ body {
         font-size: 0.9rem; /* Smaller details text */
     }
 
-    /* Reduce particle size and visibility for mobile */
-    .particle:nth-child(1) { width: 5px; height: 5px; }
-    .particle:nth-child(2) { width: 7px; height: 7px; }
-    .particle:nth-child(3) { width: 4px; height: 4px; }
-    .particle:nth-child(4) { width: 10px; height: 10px; }
-    .particle:nth-child(5) { width: 6px; height: 6px; }
-    .particle:nth-child(6) { width: 9px; height: 9px; }
 }
 
 /* Keyword styling */
